@@ -4,7 +4,21 @@
 body {
   background-color: black;
 }
+p {
+  color: red;
+}
 </style>
-<h1>i might use this</h1>
-</html>
+<script>
+var myQuotes = new Array();
+myQuotes[0] = "Funny";
+myQuotes[1] = "Sad";
+myQuotes[2] = "Confusing";
+
+var myRandom = Math.floor(Math.random()*myQuotes.length);
+
+$('#myQuote').html(myQuotes[myRandom]);
+</script>
+<p id="myQuote">Slogan</p><br>
+<p1 id="myQuote1">Slogan</p><br>
+<p2 id="myQuote2">Slogan</p>
 </html>
