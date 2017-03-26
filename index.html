@@ -1,62 +1,46 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <style>
-body {
-  background-color: black;
-}
-p {
-  color: red;
-  text-shadow: 3px 2px green;
-  font-size: 120px;
-}
-p1 {
-  color: green;
-  text-shadow: 3px 2px blue;
-  font-size: 80px;
-}
-p2 {
-  color: Blue;
-  text-shadow: 3px 2px yellow;
-  font-size: 80px;
-}
-p3 {
-    padding: 50px 30px 50px 80px;
-}
+  body {
+    background-color: black;
+  }
 </style>
+
 <body>
   <center>
-  <p>
+    <a href="index.html"><img src=".\images\title.png" width="200px"></a>
+    <br>
+    <br>
+    <br>
+    <img id="image" />
     <script>
-      var c = "Funny";
-      var d = "Sad";
-      var e = "Weird";
-      var thing = window['cde'.charAt(Math.floor(Math.random()*3))];
-      document.write(''+ thing);
+      var description = [
+        "./images/7Kjy8X4.png",
+        "./images/buDaeRs.png",
+        "./images/CwDK51i.png",
+        "./images/de7ic1p.png",
+        "./images/dxclNpx.png",
+        "./images/KygEzpc.png",
+        "./images/Md8Vb9S.png",
+        "./images/ocZ7OT4.png",
+        "./images/Oj0x7KR.png",
+        "./images/Pdvsz7d.png",
+        "./images/PPVUFpb.png",
+        "./images/rciH5UK.png",
+        "./images/RN8JcO8.png",
+        "./images/rnb1aY4.png",
+        "./images/TIEl5LT.png",
+        "./images/UysA27F.png",
+        "./images/Y6G2TKc.png",
+        "./images/zhiBPJa.png"
+      ];
+
+      var size = description.length
+      var x = Math.floor(size*Math.random())
+      document.getElementById('image').src=description[x];
     </script>
-  </p>
-  <p1>
-    <script>
-      var c = "Electrical";
-      var d = "Pickle";
-      var e = "Chocolate";
-      var thing = window['cde'.charAt(Math.floor(Math.random()*3))];
-      document.write(''+ thing);
-    </script>
-  </p1>
-  <p2>
-    <script>
-      var c = "Smoothie";
-      var d = "Car";
-      var e = "Card";
-      var thing = window['cde'.charAt(Math.floor(Math.random()*3))];
-      document.write(''+ thing);
-  </script>
-  </p2>
-  <br>
-  <br>
-  <br>
-  <p3>
-    <input type="button" value="Try Anothh'a" onClick="window.location.reload()">
-  </p3>
+  </center>
 </body>
+
 </html>
