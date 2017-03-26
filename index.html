@@ -6,19 +6,57 @@ body {
 }
 p {
   color: red;
+  text-shadow: 3px 2px green;
+  font-size: 120px;
+}
+p1 {
+  color: green;
+  text-shadow: 3px 2px blue;
+  font-size: 80px;
+}
+p2 {
+  color: Blue;
+  text-shadow: 3px 2px yellow;
+  font-size: 80px;
+}
+p3 {
+    padding: 50px 30px 50px 80px;
 }
 </style>
-<script>
-var myQuotes = new Array();
-myQuotes[0] = "Funny";
-myQuotes[1] = "Sad";
-myQuotes[2] = "Confusing";
-
-var myRandom = Math.floor(Math.random()*myQuotes.length);
-
-$('#myQuote').html(myQuotes[myRandom]);
-</script>
-<p id="myQuote">Slogan</p><br>
-<p1 id="myQuote1">Slogan</p><br>
-<p2 id="myQuote2">Slogan</p>
+<body>
+  <center>
+  <p>
+    <script>
+      var c = "Funny";
+      var d = "Sad";
+      var e = "Weird";
+      var thing = window['cde'.charAt(Math.floor(Math.random()*3))];
+      document.write(''+ thing);
+    </script>
+  </p>
+  <p1>
+    <script>
+      var c = "Electrical";
+      var d = "Pickle";
+      var e = "Chocolate";
+      var thing = window['cde'.charAt(Math.floor(Math.random()*3))];
+      document.write(''+ thing);
+    </script>
+  </p1>
+  <p2>
+    <script>
+      var c = "Smoothie";
+      var d = "Car";
+      var e = "Card";
+      var thing = window['cde'.charAt(Math.floor(Math.random()*3))];
+      document.write(''+ thing);
+  </script>
+  </p2>
+  <br>
+  <br>
+  <br>
+  <p3>
+    <input type="button" value="Try Anothh'a" onClick="window.location.reload()">
+  </p3>
+</body>
 </html>
